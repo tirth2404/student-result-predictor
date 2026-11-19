@@ -30,6 +30,6 @@ htmlcov/
 data/raw/
 
 # Personal notes, not part of the project
-SUBMISSION.md
+PRIVATE_NOTES.md
 
 # Intentionally committed: data.csv and models/ (trained model + metrics)
