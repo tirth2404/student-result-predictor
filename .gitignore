@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets / local config
+.env
+.env.*
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Tests
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Raw Kaggle download (data.csv is the committed, cleaned dataset)
+data/raw/
+
+# Personal notes, not part of the project
+SUBMISSION.md
+
+# Intentionally committed: data.csv and models/ (trained model + metrics)
