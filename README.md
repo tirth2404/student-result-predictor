@@ -2,7 +2,7 @@
 
 A machine-learning web app that predicts whether a student is likely to **Pass** or **Fail** from their daily study hours, attendance and previous exam score.
 
-**Live Demo:** <LIVE_URL>
+**Live Demo:** [student-result-predictor-tirth.streamlit.app](https://student-result-predictor-tirth.streamlit.app)
 
 | Dashboard | Predict | Model Performance |
 |---|---|---|
