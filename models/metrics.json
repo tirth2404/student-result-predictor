@@ -1,0 +1,128 @@
+{
+  "model_name": "Logistic Regression",
+  "feature_names": [
+    "Study_Hours",
+    "Attendance",
+    "Previous_Score"
+  ],
+  "sklearn_version": "1.8.0",
+  "training_date": "2026-11-19T16:01:21",
+  "random_state": 42,
+  "train_size": 160,
+  "test_size": 40,
+  "test_accuracy": 0.925,
+  "cv_results": {
+    "Logistic Regression": {
+      "mean": 0.8938,
+      "std": 0.0424,
+      "min": 0.8125,
+      "max": 0.9375,
+      "scores": [
+        0.9062,
+        0.9062,
+        0.9375,
+        0.9062,
+        0.8125
+      ]
+    },
+    "Decision Tree": {
+      "mean": 0.7688,
+      "std": 0.0319,
+      "min": 0.7188,
+      "max": 0.8125,
+      "scores": [
+        0.8125,
+        0.75,
+        0.7812,
+        0.7188,
+        0.7812
+      ]
+    },
+    "Random Forest": {
+      "mean": 0.8438,
+      "std": 0.0593,
+      "min": 0.7812,
+      "max": 0.9375,
+      "scores": [
+        0.8438,
+        0.7812,
+        0.9375,
+        0.875,
+        0.7812
+      ]
+    }
+  },
+  "selected_model_cv": {
+    "mean": 0.8938,
+    "std": 0.0424,
+    "min": 0.8125,
+    "max": 0.9375,
+    "scores": [
+      0.9062,
+      0.9062,
+      0.9375,
+      0.9062,
+      0.8125
+    ]
+  },
+  "confusion_matrix": [
+    [
+      20,
+      2
+    ],
+    [
+      1,
+      17
+    ]
+  ],
+  "classification_report": {
+    "Fail": {
+      "precision": 0.9523809523809523,
+      "recall": 0.9090909090909091,
+      "f1-score": 0.9302325581395349,
+      "support": 22.0
+    },
+    "Pass": {
+      "precision": 0.8947368421052632,
+      "recall": 0.9444444444444444,
+      "f1-score": 0.918918918918919,
+      "support": 18.0
+    },
+    "accuracy": 0.925,
+    "macro avg": {
+      "precision": 0.9235588972431077,
+      "recall": 0.9267676767676767,
+      "f1-score": 0.9245757385292269,
+      "support": 40.0
+    },
+    "weighted avg": {
+      "precision": 0.9264411027568922,
+      "recall": 0.925,
+      "f1-score": 0.9251414204902577,
+      "support": 40.0
+    }
+  },
+  "justification": "Logistic Regression had the highest mean cross-validation accuracy (89.4%), ahead of Random Forest (84.4%) and Decision Tree (76.9%). It is also simple, interpretable and gives well-calibrated probabilities, which suits a small dataset with three numeric features.",
+  "summary_stats": {
+    "avg_study_hours": 6.3255,
+    "avg_attendance": 74.83,
+    "avg_previous_score": 66.8,
+    "pass_count": 91,
+    "fail_count": 109,
+    "total_rows": 200
+  },
+  "feature_ranges": {
+    "Study_Hours": {
+      "min": 1.0,
+      "max": 12.0
+    },
+    "Attendance": {
+      "min": 50.3,
+      "max": 100.0
+    },
+    "Previous_Score": {
+      "min": 40.0,
+      "max": 95.0
+    }
+  }
+}
